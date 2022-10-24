@@ -54,7 +54,6 @@ public class ExampleStepTest {
     public void testWebStepIssueSearch() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         ExampleWebStepTest steps = new ExampleWebStepTest();
-
         steps.openPage();
         steps.searchRepository();
         steps.clickOnRepository();

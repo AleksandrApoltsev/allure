@@ -7,8 +7,10 @@ group 'ru.apoltsev'
 version '1.0-SNAPSHOT'
 
 allure {
+
     report {
         version.set("2.19.0")
+
     }
     adapter { // отвечает за появление папочки build/allure-results
         aspectjWeaver.set(true) //обработка аннотации @Step
@@ -26,6 +28,7 @@ repositories {
 
 dependencies {
     testImplementation(
+            'org.aspectj:aspectjweaver:1.9.9.1',
             'org.junit.jupiter:junit-jupiter:5.9.0',
             'com.codeborne:selenide:6.9.0',
             'io.qameta.allure:allure-selenide:2.19.0'
